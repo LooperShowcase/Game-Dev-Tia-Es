@@ -79,6 +79,8 @@ function unlockBoard() {
 function disableCards() {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
+  firstCard.removeEventListener("touchstart", flipCard);
+  secondCard.removeEventListener("touchstart", flipCard);
   score = score + 1;
   unlockBoard();
 }
