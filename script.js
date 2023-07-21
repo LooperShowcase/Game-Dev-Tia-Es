@@ -41,6 +41,7 @@ function GenerateCards() {
         <div class="back"></div>
         `;
     cardElement.addEventListener("click", flipCard); // add this
+    cardElement.addEventListener("touchstart", flipCard);
     cardsContainer.appendChild(cardElement);
   }
 }
